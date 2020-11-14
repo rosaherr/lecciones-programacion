@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>soy Rosa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <form onsubmit="return agregarTexto(event)">
+
+        <div>
+            <label for="">Texto</label>
+            <input type="text" required id="input1">
+        </div>
+        <button type="submit">Agregar</button>
+    </form>
+
+    <button onclick="recorrerListaForIn()">Recorrer Lista</button>
+
+
+    <ol id="list-container">        
+    </ol> 
+
+    <script src="basic-functions.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
