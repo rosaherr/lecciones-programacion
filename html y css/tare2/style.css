@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    box-sizing: content-box;
+}
+
+
+.container-background {
+    width: 100%;
+    height: 100vh;
+    background: rebeccapurple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:url(https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_960_720.jpg)
+}
+.card {
+    background: rgb(71, 50, 194);
+    width: 400px;
+    padding: 15px;
+    
+    
+}
+.texto {
+    text-align: center;
+    
+}
+.texto input {
+    width: 100%;
+}
+.texto button {
+    background: gray;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+}
+.input-container {
+    margin: 15px;
+}
