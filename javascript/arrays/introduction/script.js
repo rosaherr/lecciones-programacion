@@ -17,7 +17,7 @@ let recorrerListaForIn = () => {
     let html_structure = "";    
     let index = 0;
     for(let texto of lista) {
-        html_structure +=  '<li onclick="evento('+ index +')">' + texto + '</li>'        
+        html_structure +=  '<li onclick="eliminarElemento('+ index +')">' + texto + '</li>'        
         index++;
     }
     console.log(html_structure)
@@ -53,7 +53,11 @@ let recorrerListaFor = () => {
 
 
 let eliminarElemento = (index) => {
-    lista.splice(index, 1);
+    lista.splice(index, 1 );
+    recorrerListaForIn ();
+    console.log (lista)
+
+
 }
 
 let evento = (index) => {
