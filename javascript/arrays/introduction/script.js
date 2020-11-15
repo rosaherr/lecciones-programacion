@@ -14,6 +14,7 @@ let agregarTexto = (e)  => {
 
 
 let recorrerListaForIn = () => { 
+    debugger
     let html_structure = "";    
     let index = 0;
     for(let texto of lista) {
