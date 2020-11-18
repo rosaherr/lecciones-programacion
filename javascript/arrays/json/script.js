@@ -93,7 +93,8 @@ function agregarAlumno() {
     
     let sumatoria = 0;    
     // Por cada elemento json en el arreglo se le pasa a la variable alumno
-    for(let alumno of arregloAlumnos) {       
+    for(let alumno of arregloAlumnos) { 
+        sumatoria += alumno.calificacion      
         // AQUI TTIENES QUE AGREGA LA LOGICA
     }
     let promedio = sumatoria/arregloAlumnos.length
