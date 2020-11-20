@@ -7,18 +7,27 @@ let agregarTexto = (e)  => {
     cleanInputById("input1");
     lista.push(texto);
     console.log(lista);
-    recorrerListaForIn();
+    refrescarListaVista();
 
     return false;
 }
 
 
-let recorrerListaForIn = () => { 
+let refrescarListaVista = () => { 
     debugger
     let html_structure = "";    
     let index = 0;
-    for(let texto of lista) {
-        html_structure +=  '<li onclick="eliminarElemento('+ index +')">' + texto + '</li>'        
+    lista = ['JUANITO', 'PEPE', 'ROSA MARIA', 'LETY'] 
+    
+    for (let texto of lista) {
+        html_structure +=  '<li onclick="eliminarElemento('+ index +')">' + texto + '</li>'  
+            /*
+                let lista = ['JUANITO', 'PEPE', 'ROSA MARIA', 'LETY'] 
+            */
+            //   <li onclick="eliminarElemento(0)">JUANITO</li>'  
+            //   <li onclick="eliminarElemento(1)">PEPE</li>'  
+            //   <li onclick="eliminarElemento(2)">ROSA MARIA</li>'  
+            //   <li onclick="eliminarElemento(3)">LETY</li>'  
         index++;
     }
     console.log(html_structure)
@@ -55,7 +64,7 @@ let recorrerListaFor = () => {
 
 let eliminarElemento = (index) => {
     lista.splice(index, 1 );
-    recorrerListaForIn ();
+    refrescarListaVista ();
     console.log (lista)
 
 
@@ -66,4 +75,4 @@ let evento = (index) => {
 }
 
 // eliminarElemento(0)
-// recorrerListaForIn()
+// refrescarListaVista()
