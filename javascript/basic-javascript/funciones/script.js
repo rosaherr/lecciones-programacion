@@ -1,12 +1,9 @@
 function hola( ) {
-
-    console.log("hola rositaaaa")
-    
+    console.log("hola rositaaaa")  
 }
-function imprimir( mensaje ) {
 
+function imprimir( mensaje ) {
     console.log(mensaje)
-    
 }
 
 
