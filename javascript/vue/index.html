@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>soy Rosa</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+    <div id="app">
+        <input type="number" v-model="peso">
+        <h1>Peso ${{ peso }}</h1>
+        <h1>Dolar ${{ valorDolar }}</h1>
+
+        <button v-on:click="agregarDinero(50)">Agregar $50</button>
+        <button v-on:click="restarDinero(50)">Restar $50</button>
+        
+        <p v-bind:style="{color: statusColor}">{{ mensajeDelDinero }}</p>        
+        <!-- <p style="color: red" v-if="peso < 100">{{ mensajeDelDinero }}</p>        
+        <p style="color: green" v-else>{{ mensajeDelDinero }}</p>         -->
+    </div>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
