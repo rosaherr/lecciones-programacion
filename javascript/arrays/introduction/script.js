@@ -76,3 +76,18 @@ let evento = (index) => {
 
 // eliminarElemento(0)
 // refrescarListaVista()
+
+// for (i = 100; i >= 50; i = i - 3){
+//     var mensaje = "mensaje " + i
+//     console.log(mensaje)
+// }
+
+var nombres = ['rosa', "leticia", "camila"]
+// console.log (nombres[0])
+// for ( i =0; i < nombres.length; i ++)
+// console.log (nombres[i])
+    let i = 0
+while (i < nombres.length) { 
+    console.log (nombres[i])
+    i++ 
+}

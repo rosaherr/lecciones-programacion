@@ -3,7 +3,7 @@ class Golondrina {
     constructor (){
         this.energia = 0
     } 
-    getEnergia () {
+    getEnergia () {  
         this.energia
         console.log(this.energia)
     }
